@@ -1,80 +1,94 @@
 # 🐍 Python Learning
 
-> A structured repository documenting my Python learning journey through notes, examples, and hands-on practice.
-
-![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
-![Language](https://img.shields.io/badge/Language-Python%203-yellow)
-![Repository](https://img.shields.io/badge/Repository-Learning-green)
+> A structured repository documenting my Python learning journey through notes, examples, exercises, and hands-on practice.
 
 ---
 
 ## 📖 About
 
-This repository contains all the code, notes, and practice exercises I complete while learning Python.
+This repository contains the code, notes, and practice exercises I complete while learning Python.
 
-The goal is to build a strong foundation in Python programming before moving on to:
+My goal is to build a strong foundation in Python programming before moving on to:
 
-- Data Analysis
-- Machine Learning
-- Artificial Intelligence
-- Automation
-- Backend Development
+- 📊 Data Analysis
+- 🤖 Machine Learning
+- 🧠 Artificial Intelligence
+- ⚙️ Automation
+- 🌐 Backend Development
 
-Everything here is written as part of my learning process and will continue to grow over time.
+This repository is regularly updated as I continue learning new Python concepts and building projects.
 
 ---
 
 ## 🎯 Learning Source
 
-- **Primary Course:** CodeWithHarry Python Course
-- **Language:** Python 3.x
+- **Primary Course:** CodeWithHarry – Complete Python Bootcamp
+- **Language:** Python 3.14.3
+- **Editor:** Visual Studio Code
 
 ---
 
-# 📚 Topics Covered
+# 📚 Course Progress
 
-| Status | Topic |
-|:------:|-------|
-| ✅ | Setup |
-| ✅ | Python Syntax |
-| ✅ | Variables |
-| ✅ | Type Casting |
-| ✅ | User Input |
-| ✅ | Comments & Escape Sequences |
-| ✅ | Operators |
-| ✅ | Conditional Statements |
-| ✅ | Loops |
+| Status | Module |
+|:------:|--------|
+| ✅ | Introduction to Python |
+| ✅ | Python Fundamentals |
+| ✅ | Control Flow & Loops |
 | ✅ | Strings |
-| ✅ | Functions |
-| ✅ | Lists |
-| ✅ | Tuples |
-| ✅ | Sets |
-| ✅ | Dictionaries |
+| ✅ | Functions & Modules |
+| ✅ | Data Structures |
 | ✅ | Object-Oriented Programming |
 | 🚧 | Advanced Python Concepts |
+| ⏳ | File I/O |
+| ⏳ | Working with External Libraries |
+| ⏳ | Python for AI Development |
+| ⏳ | Hands-on Python Projects |
+| ⏳ | Git & Version Control |
 
 ---
 
 # 💻 Practice Sets
 
-- Practice Set 1
-- Practice Set 2
-- Practice Set 3
-- Practice Set 4
-- Practice Set 5
-- Practice Set 6
+- ✅ Practice Set 1
+- ✅ Practice Set 2
+- ✅ Practice Set 3
+- ✅ Practice Set 4
+- ✅ Practice Set 5
+- ✅ Practice Set 6
+
+---
+
+# 📊 Repository Stats
+
+- 📁 **17** Topic Folders
+- 💻 **100+** Python Programs
+- 📝 **6** Practice Sets
+- 🔄 Regularly Updated
 
 ---
 
 # 📁 Repository Structure
 
-```
+```text
 python-learning/
 │
 ├── 01_SETUP
 ├── 02_python_syntax
 ├── 03_variables
-├── ...
+├── 04_typecasting
+├── 05_USER_INPUT
+├── 06_comments_print_esc
+├── 07_operators
+├── 08_conditionals
+├── 09_LOOPS
+├── 10_STRINGS
+├── 11_FUNCTIONS
+├── 12_LISTS
+├── 13_TUPLES
+├── 14_SETS
+├── 15_DICTIONARY
+├── 16_OOPS
 ├── 17_PYTHON_ADVANCED_CONCEPTS
 │
 ├── PRACTICE-SET-1
@@ -87,24 +101,12 @@ python-learning/
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technologies Used
 
 - Python 3
-- VS Code
+- Visual Studio Code
 - Git
 - GitHub
-
----
-
-## 🚀 Current Progress
-
-- [x] Python Fundamentals
-- [x] Object-Oriented Programming
-- [ ] Advanced Python Concepts
-- [ ] File Handling
-- [ ] Exception Handling
-- [ ] Modules & Packages
-- [ ] Projects
 
 ---
 
@@ -112,17 +114,41 @@ python-learning/
 
 This repository serves as:
 
-- My Python learning journal
-- A collection of practice programs
-- Revision notes for future reference
-- A record of my programming progress
+- 📘 My Python learning journal
+- 💻 A collection of Python practice programs
+- 📝 Revision notes for future reference
+- 📈 A record of my programming progress
 
 ---
 
-## 🤝 Contributions
+# 🎯 Future Roadmap
 
-This is a personal learning repository, so external contributions are not expected. However, suggestions and feedback are always welcome.
+After completing Python fundamentals, I plan to continue learning and building projects in:
+
+- 📂 File Handling
+- ⚠️ Exception Handling
+- 📦 Modules & Packages
+- 🧵 Multithreading
+- 📝 Regular Expressions
+- 📊 NumPy
+- 🐼 Pandas
+- 📈 Matplotlib
+- 🗄 SQL
+- 🤖 Machine Learning
+- 📉 Data Analysis
+- 📊 Power BI
+- 🚀 Real-world Python Projects
 
 ---
 
-## ⭐ If you found this repository helpful, consider giving it a star!
+# 🤝 Contributing
+
+This is a personal learning repository.
+
+While external contributions are not expected, suggestions, corrections, and constructive feedback are always welcome.
+
+---
+
+## ⭐ Support
+
+If you found this repository useful or interesting, consider giving it a ⭐.
