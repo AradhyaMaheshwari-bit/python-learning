@@ -96,19 +96,15 @@ python-learning/
 
 ---
 
-# 🚀 Current Progress
+## 🚀 Current Progress
 
-✔ Python Fundamentals
-
-🚧 Advanced Python Concepts
-
-⏳ File Handling
-
-⏳ Exception Handling
-
-⏳ Modules & Packages
-
-⏳ Projects
+- [x] Python Fundamentals
+- [x] Object-Oriented Programming
+- [ ] Advanced Python Concepts
+- [ ] File Handling
+- [ ] Exception Handling
+- [ ] Modules & Packages
+- [ ] Projects
 
 ---
 
