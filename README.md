@@ -22,8 +22,9 @@ This repository is regularly updated as I continue learning new Python concepts 
 
 ## 🎯 Learning Source
 
-- **Primary Course:** CodeWithHarry – Complete Python Bootcamp
-- **Language:** Python 3.14.3
+- **Primary Course:** CodeWithHarry – Complete Python Bootcamp (2026)
+- **Language:** Python 3
+- **Current Version:** Python 3.14.3
 - **Editor:** Visual Studio Code
 
 ---
@@ -65,6 +66,14 @@ This repository is regularly updated as I continue learning new Python concepts 
 - 💻 **100+** Python Programs
 - 📝 **6** Practice Sets
 - 🔄 Regularly Updated
+
+---
+
+# 🎓 Learning Approach
+
+This repository follows a structured, topic-by-topic approach.
+
+Each folder contains examples, exercises, and practice programs focused on a specific Python concept, making it useful for both learning and revision.
 
 ---
 
@@ -117,7 +126,7 @@ This repository serves as:
 - 📘 My Python learning journal
 - 💻 A collection of Python practice programs
 - 📝 Revision notes for future reference
-- 📈 A record of my programming progress
+- 📈 A record of my Python programming progress
 
 ---
 
@@ -143,12 +152,12 @@ After completing Python fundamentals, I plan to continue learning and building p
 
 # 🤝 Contributing
 
-This is a personal learning repository.
+This is a personal learning repository created to document my Python journey.
 
-While external contributions are not expected, suggestions, corrections, and constructive feedback are always welcome.
+Suggestions, corrections, and constructive feedback are always welcome.
 
 ---
 
 ## ⭐ Support
 
-If you found this repository useful or interesting, consider giving it a ⭐.
+If you found this repository helpful or interesting, consider giving it a ⭐.
