@@ -2,8 +2,8 @@
 
 > A structured repository documenting my Python learning journey through notes, examples, exercises, and hands-on practice.
 
-![Python](https://img.shields.io/badge/Python-3.14.3-blue?logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
+![Python](https://img.shields.io/badge/Python-3.14.3-blue?logo=python&logoColor=white)
 ![Course](https://img.shields.io/badge/Course-CodeWithHarry-orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AradhyaMaheshwari-bit/python-learning)
 
