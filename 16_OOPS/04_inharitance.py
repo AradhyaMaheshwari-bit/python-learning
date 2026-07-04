@@ -1,0 +1,18 @@
+class Animal:   # Parent Class (Superclass)
+    location = "Australia"
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print("Speaking now....")
+
+class Dog(Animal):      # This is how inheritance is done in Python
+    def speak(self):    # Method overriding: overriding a method/function that is already present in parent class
+        super().speak()     # we are using the speak function of parent class
+        print("Woof!")
+
+# a = Animal("Dog")
+# a.speak()
+d = Dog("Bruno")
+d.speak()
+# print(d.location)
+
