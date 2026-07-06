@@ -45,7 +45,7 @@ This repository is regularly updated as I continue learning new Python concepts 
 | ✅ | Functions & Modules |
 | ✅ | Data Structures |
 | ✅ | Object-Oriented Programming |
-| 🚧 | Advanced Python Concepts |
+| ✅ | Advanced Python Concepts |
 | ⏳ | File I/O |
 | ⏳ | Working with External Libraries |
 | ⏳ | Python for AI Development |
@@ -68,7 +68,7 @@ This repository is regularly updated as I continue learning new Python concepts 
 # 📊 Repository Stats
 
 - 📁 **17** Topic Folders
-- 💻 **100+** Python Programs
+- 💻 **110+** Python Programs
 - 📝 **6** Practice Sets
 - 🔄 Regularly Updated
 
@@ -137,7 +137,7 @@ This repository serves as:
 
 # 🎯 Future Roadmap
 
-After completing Python fundamentals, I plan to continue learning and building projects in:
+Next, I plan to continue learning and building projects in:
 
 - 📂 File Handling
 - ⚠️ Exception Handling
