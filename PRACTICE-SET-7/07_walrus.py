@@ -4,7 +4,6 @@ while (data := input("Enter data: ")):
         break
 
 
-# words = ["python", "rocks", "ai"]
-# while (data := list(map(len(words)))):
-#     print(data)
-
+words = ["python", "rocks", "ai"]
+lengths = [length for word in words if (length := len(word)) >= 4]
+print(lengths)

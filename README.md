@@ -62,6 +62,7 @@ This repository is regularly updated as I continue learning new Python concepts 
 - ✅ Practice Set 4
 - ✅ Practice Set 5
 - ✅ Practice Set 6
+- ✅ Practice Set 7
 
 ---
 
@@ -69,7 +70,7 @@ This repository is regularly updated as I continue learning new Python concepts 
 
 - 📁 **17** Topic Folders
 - 💻 **110+** Python Programs
-- 📝 **6** Practice Sets
+- 📝 **7** Practice Sets
 - 🔄 Regularly Updated
 
 ---
