@@ -46,7 +46,7 @@ This repository is regularly updated as I continue learning new Python concepts 
 | ✅ | Data Structures |
 | ✅ | Object-Oriented Programming |
 | ✅ | Advanced Python Concepts |
-| ⏳ | File I/O |
+| ✅ | File I/O |
 | ⏳ | Working with External Libraries |
 | ⏳ | Python for AI Development |
 | ⏳ | Hands-on Python Projects |
@@ -56,9 +56,9 @@ This repository is regularly updated as I continue learning new Python concepts 
 
 # 📊 Repository Stats
 
-- 📁 **17** Topic Folders
-- 💻 **110+** Python Programs
-- 📝 **7** Practice Sets
+- 📁 **18** Topic Folders
+- 💻 **602+** Python Programs
+- 📝 **8** Practice Sets
 - 🔄 Regularly Updated
 
 ---
@@ -72,9 +72,9 @@ python-learning/
 ├── 02_python_syntax
 ├── 03_variables
 ├── ...
-├── 17_PYTHON_ADVANCED_CONCEPTS
+├── 18_FILES
 │
-├── PRACTICE-SET-1 → PRACTICE-SET-7
+├── PRACTICE-SET-1 → PRACTICE-SET-8
 ```
 
 ---
