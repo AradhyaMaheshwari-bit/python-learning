@@ -1,0 +1,154 @@
+# Repo Setup
+git init
+git branch -M main
+git remote add origin <repo-url.git>
+git push -u origin main
+
+# Creates an empty file.
+touch <filename.ext>
+touch .gitignore
+touch main.py config.py utils.py
+
+# Prints text to the terminal.
+echo Hello
+
+# Writing text to a file
+Using > redirects the output into a file.
+-Overwrite
+echo ".venv/" > .gitignore
+-Append
+echo ".venv/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+
+# Checking Repository Status
+git status
+git log
+git log --oneline
+git log --oneline -5
+
+# Staging Files
+git add .
+git add readme.md
+git add file1.py file2.py
+
+# Committing
+git commit -m "Your Commit"
+git commit --amend
+git commit --amend -m "New commit message"
+git commit --amend --no-edit
+
+# Pushing & Pulling
+git push
+git pull
+git pull --rebase
+git pull --rebase origin main
+git push --force-with-lease
+
+# Rename current branch
+git branch -M main
+
+# Remote Repositories
+-View configured remotes
+git remote -v
+
+# Interactive Rebase (Advanced)
+-Start interactive rebase
+git rebase -i <commit-hash>
+-Continue rebase
+git rebase --continue
+-Skip current commit
+git rebase --skip
+-Edit rebase todo list
+git rebase --edit-todo
+
+# Inspecting Commits
+-Show a commit
+git show <commit-hash>
+-Show a specific file from a commit
+git show <commit-hash>:path/to/file
+
+# Restoring
+-Unstage a file
+git restore --staged README.md or git reset HEAD file.txt
+-Discard changes to a file
+git restore README.md
+git restore .
+
+# Cloning
+-Clone a repository
+git clone <repository-url>
+
+# Changes Detection
+-unstaged changes: It compares: Working Directory ↔ Staging Area
+git diff
+-staged files: It compares: Staging Area ↔ Last Commit
+git diff --staged
+git diff --cached
+-Compare commits
+git diff commit1 commit2
+-Compare branches
+git diff main feature
+-Compare one file
+git diff README.md
+-See Changes Between Commits: Compare last commit with the current one
+git diff HEAD~1 HEAD
+
+# Reset to a Previous Commit
+-Soft Reset (keeps changes in staging):
+git reset --soft HEAD~1
+-Mixed Reset (keeps changes in working directory):
+git reset HEAD~1
+-Hard Reset (discards all changes):
+git reset --hard HEAD~1
+--hard permanently deletes uncommitted work!
+
+# .gitignore
+*.ext   : detects all files with this ext and ignore them
+abc/  : ignores the entire directory
+!abs.ext  : ! is used for exception to *.ext
+-Global .gitignore
+-Set up a global ignore file for all repositories:
+git config --global core.excludesfile ~/.gitignore_global
+-Add it to .gitignore
+echo "passwords.txt" >> .gitignore
+
+# Removing Files from Git
+-Remove File from Repository and Disk
+git rm file.txt
+git commit -m "Remove file.txt"
+
+-Remove File from Repository but Keep on Disk
+git rm --cached file.txt
+git commit -m "Stop tracking file.txt"
+
+# Moving/Renaming Files
+-Git tracks file movements:
+git mv oldname.txt newname.txt
+git commit -m "Rename oldname.txt to newname.txt"
+
+-This is equivalent to:
+mv oldname.txt newname.txt
+git rm oldname.txt
+git add newname.txt
+
+# View Current Branch
+-The asterisk (*) shows your current branch:
+git branch
+
+-View All Branches (Including Remote)
+git branch -a
+
+# Creating and Switching Branches
+-Create a New Branch
+git branch feature-navbar
+
+-Switch to a Branch
+git checkout feature-navbar
+-Or with the newer command:
+git switch feature-navbar
+
+-Create and Switch in One Command
+git checkout -b feature-navbar
+Or:
+git switch -c feature-navbar
