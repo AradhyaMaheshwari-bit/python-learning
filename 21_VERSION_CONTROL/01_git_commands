@@ -1,154 +1,322 @@
 # Repo Setup
-git init
+'git init
 git branch -M main
 git remote add origin <repo-url.git>
-git push -u origin main
+git push -u origin main'
 
 # Creates an empty file.
-touch <filename.ext>
+'touch <filename.ext>
 touch .gitignore
-touch main.py config.py utils.py
+touch main.py config.py utils.py'
 
 # Prints text to the terminal.
-echo Hello
+'echo Hello'
 
 # Writing text to a file
 Using > redirects the output into a file.
--Overwrite
+-Overwrite'
 echo ".venv/" > .gitignore
--Append
+'-Append'
 echo ".venv/" >> .gitignore
 echo "__pycache__/" >> .gitignore
-echo "*.pyc" >> .gitignore
+echo "*.pyc" >> .gitignore'
 
 # Checking Repository Status
-git status
+'git status
 git log
 git log --oneline
-git log --oneline -5
+git log --oneline -5'
 
 # Staging Files
-git add .
+'git add .
 git add readme.md
-git add file1.py file2.py
+git add file1.py file2.py'
 
 # Committing
-git commit -m "Your Commit"
+'git commit -m "Your Commit"
 git commit --amend
 git commit --amend -m "New commit message"
-git commit --amend --no-edit
+git commit --amend --no-edit'
 
 # Pushing & Pulling
-git push
+'git push
 git pull
 git pull --rebase
 git pull --rebase origin main
-git push --force-with-lease
+git push --force-with-lease'
 
 # Rename current branch
-git branch -M main
+'git branch -M main'
 
 # Remote Repositories
 -View configured remotes
-git remote -v
+'git remote -v'
 
 # Interactive Rebase (Advanced)
 -Start interactive rebase
-git rebase -i <commit-hash>
+'git rebase -i <commit-hash>'
 -Continue rebase
-git rebase --continue
+'git rebase --continue'
 -Skip current commit
-git rebase --skip
+'git rebase --skip'
 -Edit rebase todo list
-git rebase --edit-todo
+'git rebase --edit-todo'
 
 # Inspecting Commits
 -Show a commit
-git show <commit-hash>
+'git show <commit-hash>'
 -Show a specific file from a commit
-git show <commit-hash>:path/to/file
+'git show <commit-hash>:path/to/file'
 
 # Restoring
 -Unstage a file
-git restore --staged README.md or git reset HEAD file.txt
+'git restore --staged README.md or git reset HEAD file.txt'
 -Discard changes to a file
-git restore README.md
-git restore .
+'git restore README.md
+git restore .'
 
 # Cloning
 -Clone a repository
-git clone <repository-url>
+'git clone <repository-url>'
 
 # Changes Detection
 -unstaged changes: It compares: Working Directory ↔ Staging Area
-git diff
+'git diff'
 -staged files: It compares: Staging Area ↔ Last Commit
-git diff --staged
-git diff --cached
+'git diff --staged
+git diff --cached'
 -Compare commits
-git diff commit1 commit2
+'git diff commit1 commit2'
 -Compare branches
-git diff main feature
+'git diff main feature'
 -Compare one file
-git diff README.md
+'git diff README.md'
 -See Changes Between Commits: Compare last commit with the current one
-git diff HEAD~1 HEAD
+'git diff HEAD~1 HEAD'
 
 # Reset to a Previous Commit
 -Soft Reset (keeps changes in staging):
-git reset --soft HEAD~1
+'git reset --soft HEAD~1'
 -Mixed Reset (keeps changes in working directory):
-git reset HEAD~1
+'git reset HEAD~1'
 -Hard Reset (discards all changes):
-git reset --hard HEAD~1
+'git reset --hard HEAD~1'
 --hard permanently deletes uncommitted work!
 
 # .gitignore
-*.ext   : detects all files with this ext and ignore them
-abc/  : ignores the entire directory
-!abs.ext  : ! is used for exception to *.ext
+"*.ext"   : detects all files with this ext and ignore them
+"abc/"  : ignores the entire directory
+"!abs.ext"  : ! is used for exception to *.ext
 -Global .gitignore
 -Set up a global ignore file for all repositories:
-git config --global core.excludesfile ~/.gitignore_global
+'git config --global core.excludesfile ~/.gitignore_global'
 -Add it to .gitignore
-echo "passwords.txt" >> .gitignore
+'echo "passwords.txt" >> .gitignore'
 
 # Removing Files from Git
 -Remove File from Repository and Disk
-git rm file.txt
-git commit -m "Remove file.txt"
+'git rm file.txt
+git commit -m "Remove file.txt"'
 
 -Remove File from Repository but Keep on Disk
-git rm --cached file.txt
-git commit -m "Stop tracking file.txt"
+'git rm --cached file.txt
+git commit -m "Stop tracking file.txt"'
 
 # Moving/Renaming Files
 -Git tracks file movements:
-git mv oldname.txt newname.txt
-git commit -m "Rename oldname.txt to newname.txt"
+'git mv oldname.txt newname.txt
+git commit -m "Rename oldname.txt to newname.txt"'
 
 -This is equivalent to:
 mv oldname.txt newname.txt
-git rm oldname.txt
-git add newname.txt
+'git rm oldname.txt
+git add newname.txt'
 
 # View Current Branch
 -The asterisk (*) shows your current branch:
-git branch
+'git branch'
 
 -View All Branches (Including Remote)
-git branch -a
+'git branch -a'
 
 # Creating and Switching Branches
 -Create a New Branch
-git branch feature-navbar
+'git branch feature-navbar'
 
 -Switch to a Branch
-git checkout feature-navbar
+'git checkout feature-navbar'
 -Or with the newer command:
-git switch feature-navbar
+'git switch feature-navbar'
 
 -Create and Switch in One Command
-git checkout -b feature-navbar
+'git checkout -b feature-navbar'
 Or:
-git switch -c feature-navbar
+'git switch -c feature-navbar'
+
+#Merging Branches
+--Fast-Forward Merge
+When there are no divergent commits, Git simply moves the pointer forward:
+-On main branch
+'git checkout main'
+-Merge feature branch
+'git merge feature-navbar'
+
+--Three-Way Merge
+When branches have diverged, Git creates a merge commit:
+'git checkout main'
+'git merge feature-login'
+
+# Resolving Conflicts
+"ours" = The branch you are currently on (the branch you are merging INTO)
+"theirs" = The branch you are merging FROM (the incoming changes)
+Keep current branch changes (ours):
+'git checkout --ours index.html'
+Keep incoming branch changes (theirs):
+'git checkout --theirs index.html'
+"Or you can manually change file content"
+
+# Use a merge tool:
+'git mergetool'
+
+## Branch Management
+# Delete a Branch
+-After merging, you can delete the branch:
+
+# Delete local branch
+'git branch -d feature-navbar'
+# Force delete (if not merged)
+'git branch -D feature-navbar'
+
+# List Remote Branches
+'git branch -r'
+
+# Delete Remote Branch
+'git push origin --delete branch-name'
+
+# Rename a Branch
+- Rename current branch
+'git branch -m new-name'
+- Rename a different branch
+'git branch -m old-name new-name'
+
+# List Merged/Unmerged Branches
+- Show merged branches
+'git branch --merged'
+- Show unmerged branches
+'git branch --no-merged'
+
+## Branching Strategies
+# Feature Branch Workflow
+1. Create feature branch
+'git checkout -b feature-shopping-cart'
+2. Work on feature
+... make commits ...
+3. Merge back to main
+'git checkout main
+git merge feature-shopping-cart'
+4. Delete feature branch
+'git branch -d feature-shopping-cart'
+
+# Hotfix Workflow
+1. Create hotfix from main
+'git checkout main
+git checkout -b hotfix-security'
+2. Fix the issue
+... make changes ...
+'git commit -m "Fix security vulnerability"'
+3. Merge to main
+'git checkout main
+git merge hotfix-security'
+4. Also merge to develop if exists
+'git checkout develop
+git merge hotfix-security'
+
+## Visualizing Branches
+# See Branch Graph
+'git log --graph --oneline --all'
+# See Branch Divergence
+'git log main..feature-branch'
+- Shows commits in feature-branch that arenot in main.
+
+## Fetch Changes
+# Fetch without merging
+'git fetch'
+
+# Fetch all remotes
+'git fetch --all'
+
+## Connecting to Remotes
+# View Remotes
+'git remote -v'
+# Add Remote
+'git remote add origin https://github.com/username/repository.git'
+# Change Remote URL
+'git remote set-url origin https://github.com/username/new-repo.git'
+
+## Core Stash Commands
+- Save Changes to Stash
+# Stash all changes
+'git stash'
+
+# Stash with a message
+'git stash save "work in progress on feature X"'
+
+# Include untracked files
+'git stash -u'
+
+# View Stashes
+- List all stashes
+'git stash list'
+
+Apply Stash
+# Apply most recent stash
+'git stash apply'
+
+# Apply specific stash
+'git stash apply stash@{2}''
+
+# Apply and remove from stash list
+'git stash pop'
+
+Remove Stashes
+# Remove most recent stash
+'git stash drop'
+
+# Remove specific stash
+'git stash drop stash@{1}''
+
+# Clear all stashes
+'git stash clear'
+
+Useful Stash Operations
+View Stash Contents
+# Show files in latest stash
+'git stash show'
+
+# Show detailed diff
+'git stash show -p'
+
+# Show specific stash diff
+'git stash show -p stash@{1}'
+
+Create Branch from Stash
+# Create new branch and apply stash
+'git stash branch new-feature-branch'
+
+Stash Specific Files
+# Interactive stash
+'git stash -p'
+
+Common Use Cases
+Switch Branches Quickly
+# Working on feature, need to fix bug on main
+'git stash
+git checkout main'
+# Fix bug...
+'git checkout feature-branch
+git stash pop'
+
+Pull Without Committing
+'git stash
+git pull
+git stash pop'
