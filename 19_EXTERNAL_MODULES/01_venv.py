@@ -1,18 +1,63 @@
+# =========================
+# Create Virtual Environment
+# =========================
+
 # python -m venv .venv
+# or
+# py -m venv .venv
+
+# =========================
+# Activate Virtual Environment
+# =========================
+#PS
 # .\.venv\Scripts\Activate.ps1
+# bash
+# source .venv/Scripts/activate
+# or
+# . .venv/Scripts/activate
 
-# pip install library_name
-# pip install library_name==version
-# pip install numpy==1.20.0
+# =========================
+# Install Packages
+# =========================
 
-# pip list
+pip install library_name
 
-# pip install --upgrade library_name
+pip install library_name==version
 
-# pip uninstall library_name
+pip install numpy==1.20.0
 
-# pip freeze > requirements.txt # create requirements.txt file
-# pip install -r requirements.txt  # install packages from the file
+# =========================
+# View Installed Packages
+# =========================
 
-# deactivate   # deactivate venv
+pip list
 
+# =========================
+# Upgrade Package
+# =========================
+
+pip install --upgrade library_name
+
+# =========================
+# Uninstall Package
+# =========================
+
+pip uninstall library_name
+
+# =========================
+# Export Installed Packages
+# =========================
+
+pip freeze > requirements.txt
+
+# =========================
+# Install from requirements.txt
+# =========================
+
+pip install -r requirements.txt
+
+# =========================
+# Deactivate Virtual Environment
+# =========================
+
+deactivate
